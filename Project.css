@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+/*Home Page CSS */
+body {
+    margin: 0px;
+    border: 0px;
+    background-color: white;
+    height: 1000px;
+    width: fit-content;
+}
+
+#bar {
+    height: 20px;
+    width: 1519px;
+    position: absolute;
+    bottom: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+
+}
+
+.bar {
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: 1s;
+
+
+
+}
+
+.bar:hover {
+    background-color: rgb(22, 139, 255);
+    padding: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+#pic {
+    height: 800px;
+    width: 1519px;
+    background-image: url(playa.jpg);
+    margin-top: 200px;
+    border-bottom: solid 5px white;
+
+}
+
+#logo {
+    height: 300px;
+    width: 300px;
+    background-color: white;
+    background-image: url('Logo.png');
+    position: absolute;
+    top: 55%;
+    right: 40%;
+    background-size: 300px 300px;
+    border-radius: 150px;
+    border: solid 2px black;
+
+}
+
+#bridge {
+    height: 800px;
+    width: 1519px;
+    background-image: url(san-diego.jpeg);
+    background-size: 100% 117vh;
+}
+
+#inside a {
+    height: 300px;
+    width: 700px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    font-family: 'Titan One', cursive;
+    text-shadow: navy 3px 6px;
+    font-size: 50px;
+    position: absolute;
+    top: 1250px;
+
+}
+
+#accordion {
+    width: 400px;
+    position: absolute;
+    right: 10%;
+    margin-top: 225px;
+}
+
+#history {
+    width: 1519px;
+    height: 600px;
+    text-align: center;
+
+}
+
+.ui-state-active {
+    border-radius: 15px;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0px 0px;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    border-radius: 15px;
+    background-color: navy;
+    font-family: 'Titan One', cursive;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding: 1em 2.2em;
+    border-top: 0;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: block;
+    cursor: pointer;
+    position: relative;
+    margin: 2px 0px 0px;
+    padding: 0.5em 0.5em 0.5em 0.7em;
+    font-size: 100%;
+    color: white;
+}
+
+p {
+    font-family: 'Titan One', cursive;
+    color: navy;
+}
+
+li {
+    font-family: 'Titan One', cursive;
+    color: navy;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#tabs {
+    margin-top: 10px;
+    height: 450px;
+    width: 600px;
+    margin-left: 50px;
+    margin-bottom: 700px;
+    font-size: 15px;
+    border: solid 5px navy;
+
+}
+
+h1 {
+    font-family: 'Titan One', cursive;
+    color: navy;
+
+}
+
+.ui-corner-all,
+.ui-corner-top,
+.ui-corner-left,
+.ui-corner-tl {
+    border-radius: 0px;
+
+}
+
+#uno {
+    background-color: navy;
+    transition: 1s;
+}
+
+#uno:hover {
+    color: white;
+}
+
+#picy {
+    background-image: url(1900.jpg);
+    height: 450px;
+    width: 27%;
+    position: absolute;
+    right: 7%;
+    top: 262%;
+    border: 5px solid navy;
+}
+
+/* Info CSS */
+
+#information {
+    height: 1000px;
+    width: 1519px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px;
+    padding: 0;
+    animation: switch 10s infinite linear;
+}
+
+@keyframes switch {
+    0% {
+        background-color: rgb(35, 255, 35);
+    }
+
+    25% {
+        background-color: red
+    }
+
+    50% {
+        background-color: red;
+    }
+
+    75% {
+        background-color: rgb(107, 188, 255);
+    }
+
+    100% {
+        background-color: rgb(35, 255, 35);
+    }
+}
+
+#text {
+    height: 650px;
+    padding: 20px;
+    width: 800px;
+    font-family: 'Titan One', cursive;
+    ;
+    color: black;
+    margin-top: 300px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 50px;
+}
+
+/* Gallery CSS */
+
+
+
+#gal {
+    height: 1200px;
+    width: 1519px;
+   background-image:radial-gradient(black,rgb(55, 55, 55))
+
+
+}
+
+.collage {
+
+    height: 900px;
+    width: 1100px;
+    position: absolute;
+    right: 15%;
+    top: 29%;
+    border-radius: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.collage>div {
+    width: 27%;
+    height: 27%;
+    background-color: black;
+    border-radius: 15px;
+    transition: width 1s, height 1s;
+    filter: grayscale(500%);
+}
+
+.gal-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;;
+}
+
+.collage>div:hover{
+    width: 400px;
+    height: 300px;
+    filter: contrast(100%);
+    filter: drop-shadow(1px 12px 12px rgb(255, 255, 255));
+}
